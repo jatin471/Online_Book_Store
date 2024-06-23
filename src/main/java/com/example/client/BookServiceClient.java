@@ -1,5 +1,6 @@
-package com.example.bookstore;
+package com.example.client;
 
+import com.example.bookstore.BookServiceGrpc;
 import com.example.bookstore.BookServiceGrpc.*;
 import com.example.bookstore.Bookstore.*;
 import io.grpc.ManagedChannel;
@@ -16,7 +17,7 @@ public class BookServiceClient {
                 .usePlaintext()
                 .build();
 
-        BookServiceGrpc.BookServiceBlockingStub stub = BookServiceGrpc.newBlockingStub(channel);
+        BookServiceBlockingStub stub = BookServiceGrpc.newBlockingStub(channel);
 
         // Add a book
         Book book1 = Book.newBuilder()

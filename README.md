@@ -23,7 +23,7 @@ Or
 Click run icon in BookServiceServer file.
 
 ## Run the Client
-java -cp build/libs/OnlineBookStore.jar com.example.bookstore.BookServiceClient
+java -cp build/libs/OnlineBookStore.jar com.example.client.BookServiceClient
 
 Or 
 
