@@ -43,4 +43,9 @@ public class BookServiceImpl extends BookServiceGrpc.BookServiceImplBase {
         responseObserver.onNext(responseBuilder.build());
         responseObserver.onCompleted();
     }
+
+    public ConcurrentMap<String, Book> getBookStore() {
+        return bookStore;
+    }
+
 }
